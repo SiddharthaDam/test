@@ -236,7 +236,7 @@ img {
   .advantages h2 {
     font-size: 2rem;
     line-height: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .advantages h2::before {
     display: none;
