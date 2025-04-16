@@ -1,0 +1,295 @@
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+.header {
+  padding: 1rem;
+  background: #fff;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero .hero-image {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.hero .hero-text {
+  max-width: 90%;
+}
+.hero .hero-text h2 {
+  color: #00754a;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.hero .hero-text h2::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -140px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 73px;
+  background: #00945f;
+}
+.hero .hero-text p {
+  margin-bottom: 50px;
+  color: #888888;
+  text-align: left;
+}
+.hero .hero-text .btn {
+  background: #f58025;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Advantages Section */
+.advantages {
+  padding: 2rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+.advantages h2 {
+  color: #00945f;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.advantages h2::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -390px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 73px;
+  background: #00945f;
+}
+.advantages .features {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+.advantages .features .feature {
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 50%;
+  border-bottom: 0px;
+}
+.advantages .features .feature h3 {
+  color: #00945f;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.advantages .features .feature .f-link {
+  color: #759b24;
+  text-decoration: none;
+}
+.advantages .features .feature p {
+  padding-right: 40px;
+  color: #888888;
+}
+.advantages .features .only-border {
+  border-right: 1px solid #c0c0c0;
+  border-radius: 0px;
+}
+
+/* Footprint */
+.footprint {
+  padding: 20px;
+  background: #00945f;
+  text-align: center;
+  margin: 20px 85px 0 85px;
+  color: #fff;
+}
+.footprint h3 {
+  font-weight: 500;
+}
+
+.footprint2 {
+  padding: 20px;
+  background: #ebf7f5;
+  text-align: center;
+  margin: 0px 85px;
+  color: #fff;
+}
+.footprint2 P {
+  color: #888888;
+  text-align: left;
+  padding: 0 40px;
+}
+
+/* Testimonials */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 120px;
+  padding: 80px 20px;
+  border-bottom: 1px solid #00945f;
+}
+.testimonials .testimonial {
+  max-width: 180px;
+  text-align: center;
+}
+.testimonials .testimonial img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
+}
+.testimonials .testimonial blockquote {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.testimonials .testimonial p {
+  color: #00754a;
+  font-weight: bold;
+}
+.testimonials .testimonial-b {
+  min-width: 380px;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  padding: 40px 60px;
+  text-align: left;
+  font-size: 12px;
+}
+.footer .social-icons {
+  margin-bottom: 1rem;
+}
+.footer .social-icons a {
+  margin: 0px 2px;
+  display: inline-block;
+}
+.footer .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+.footer .policy,
+.footer .disclaimer {
+  margin-bottom: 20px;
+}
+.footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #666666;
+}
+
+/* Responsive tweaks */
+@media only screen and (max-width: 375px) {
+  .hero .hero-text h2::after {
+    bottom: 280px importent;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-image {
+    margin-bottom: 20px;
+  }
+  .hero .hero-text {
+    padding: 0 1rem;
+  }
+  .hero .hero-text h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .hero .hero-text h2::after {
+    bottom: 280px;
+  }
+  .hero .hero-text p {
+    margin-top: 30px;
+  }
+  .advantages h2 {
+    font-size: 2rem;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  .advantages h2::before {
+    bottom: -160px;
+  }
+  .advantages p {
+    line-height: 30px;
+    padding-right: 0px;
+  }
+  .advantages .feature {
+    min-width: 100%;
+    padding: 10px;
+  }
+  .advantages .features .feature {
+    min-width: 100%;
+    border-bottom: 1px solid #c0c0c0;
+    border-radius: 0px;
+  }
+  .advantages .features .only-border {
+    border-right: 0px;
+    border-radius: 0px;
+  }
+  .advantages .features {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .only-border {
+    border-right: none;
+    border-bottom: 0px;
+  }
+  .footprint {
+    margin: 20px 25px 0 25px;
+    font-size: 1.5rem;
+  }
+  .footprint2 {
+    margin: 0px 25px;
+  }
+  .footprint2 p {
+    padding: 0px;
+  }
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .testimonials .testimonial-b {
+    min-width: 180px;
+  }
+  .footer {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
