@@ -214,11 +214,6 @@ img {
 }
 
 /* Responsive tweaks */
-@media only screen and (max-width: 375px) {
-  .hero .hero-text h2::after {
-    bottom: 280px importent;
-  }
-}
 @media (max-width: 768px) {
   .hero .hero-image {
     margin-bottom: 20px;
