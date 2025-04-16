@@ -50,7 +50,7 @@ img {
   position: absolute;
   content: "";
   height: 2px;
-  bottom: -140px;
+  bottom: 125px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -87,7 +87,7 @@ img {
   position: absolute;
   content: "";
   height: 2px;
-  bottom: -390px;
+  bottom: -120px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -239,7 +239,7 @@ img {
     margin-bottom: 30px;
   }
   .advantages h2::before {
-    bottom: -160px;
+    bottom: -140px;
   }
   .advantages p {
     line-height: 30px;
