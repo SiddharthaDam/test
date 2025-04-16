@@ -201,7 +201,7 @@ img {
 /* Footer */
 .footer {
   background: #fff;
-    padding: 40px 60px;
+    padding: 40px 85px;
     text-align: left;
     font-size: 12px;
 
@@ -288,16 +288,19 @@ img {
 
 .advantages .features {
   flex-direction: column;
-      padding: 0px;
+  padding: 0px;
+  gap: 0px;;
 }
-
+.advantages .features .no-border-bottom{
+  border-bottom: 0px;
+}
 .only-border{
   border-right: none;
   border-bottom: 0px;
 }
 
 .footprint {
-  margin: 20px 25px 0 25px;
+  margin: 0 25px;
   font-size: 1.5rem;
 }
 .footprint2 {
@@ -311,6 +314,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  padding: 40px 20px;
   .testimonial-b {
     min-width: 180px;
   }
