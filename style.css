@@ -228,7 +228,7 @@ img {
     line-height: 35px;
   }
   .hero .hero-text h2::after {
-    bottom: 550px;
+    display: none;
   }
   .hero .hero-text p {
     margin-top: 30px;
@@ -239,7 +239,7 @@ img {
     margin-bottom: 30px;
   }
   .advantages h2::before {
-    bottom: 120px;
+    display: none;
   }
   .advantages p {
     line-height: 30px;
