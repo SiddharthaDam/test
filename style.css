@@ -38,6 +38,17 @@ img {
   max-width: 100%;
   margin-bottom: 60px;
 }
+.hero .green-overlay {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  height: 64.8%;
+  width: 55%; /* adjust as needed */
+  background-color: rgba(0, 100, 75, 0.7); /* green color with opacity */
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  /* Adjust polygon to create diagonal edge */
+}
 .hero .hero-text {
   max-width: 90%;
 }
@@ -213,10 +224,23 @@ img {
   color: #666666;
 }
 
+.web-none {
+  display: none;
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
+  .web-none {
+    display: block;
+  }
+  .mobile-none {
+    display: none;
+  }
   .hero .hero-image {
     margin-bottom: 20px;
+  }
+  .hero .green-overlay {
+    display: none;
   }
   .hero .hero-text {
     padding: 0 1rem;
@@ -291,5 +315,24 @@ img {
   }
   .footer {
     padding: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .green-overlay {
+    display: none;
+  }
+  .hero .hero-text h2::after {
+    display: none;
+  }
+  .advantages h2::before {
+    display: none;
+  }
+  .testimonials {
+    gap: 0px;
+  }
+}
+@media (max-width: 1440px) {
+  .hero .green-overlay {
+    height: 54%;
   }
 }/*# sourceMappingURL=style.css.map */
